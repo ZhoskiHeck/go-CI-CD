@@ -14,9 +14,6 @@ jobs:
       - name: Run Unit Tests
         run: GOOS=linux GOARCH=amd64 go test
 
-      - name: Build application
-        run: go build -o tracker .
-
       - name: Vet
         run: |
           go vet ./...
